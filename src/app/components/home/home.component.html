@@ -1,0 +1,19 @@
+<div style="padding: 13px;">
+    <mat-spinner *ngIf="users.length === 0"></mat-spinner>
+    <table border="1">
+        <tr>
+            <th>User</th>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Email</th>
+          </tr>
+        <tr *ngFor="let user of users" style="margin-top:11px;">
+            <td>{{user.userId}}</td>
+            <td>{{user.id}}</td>
+            <td>{{user.title}}</td>
+            <td>{{user.completed}}</td>
+        </tr>
+    </table>
+    
+
+</div>
