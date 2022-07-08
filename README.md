@@ -33,10 +33,10 @@ docker image build -t kafka-producer-starter .
 docker run --detach --publish 82:80 kafka-producer-starter
 
 ## Docker tag
-tag kafka-producer-starter kaushiksen1984/kafka-producer-starter
+docker tag kafka-producer-starter kaushiksen1984/kafka-producer-starter
 
 ## Push to docker hub
-kaushiksen1984/kafka-producer-starter
+docker push kaushiksen1984/kafka-producer-starter
 
 ## Consumed port list
 netsh interface ipv4 show excludedportrange protocol=tcp
