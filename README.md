@@ -31,6 +31,8 @@ docker image build -t kafka-producer-starter .
 
 ## Docker run locally
 docker run --detach --publish 82:80 kafka-producer-starter
+### Environment specific deployments
+docker image build -f Dockerfile.staging -t senkaushik1984/kafka-producer-starter .
 
 ## Docker tag
 docker tag kafka-producer-starter kaushiksen1984/kafka-producer-starter
